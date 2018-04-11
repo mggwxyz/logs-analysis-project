@@ -40,7 +40,8 @@ def print_most_popular_authors():
     author_views = []
     for author in authors:
         (name, id) = author
-        query = """select count(*) from log l where REPLACE(l.path, '/article/', '') in
+        query = """select count(*) from log l
+            xwhere REPLACE(l.path, '/article/', '') in
             (select slug from articles where author = """ + str(id) + ")"
         cursor.execute(query)
         count = cursor.fetchone()[0]
@@ -83,6 +84,7 @@ def print_days_with_many_errors():
         (date, error_rate) = day
         formatted_date = date.strftime("%B %-d, %Y")
         print(formatted_date + " - " + str(error_rate) + "% errors")
+
 
 # Print out the answers
 print_most_popular_articles()
