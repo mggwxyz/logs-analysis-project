@@ -41,7 +41,7 @@ def print_most_popular_authors():
     for author in authors:
         (name, id) = author
         query = """select count(*) from log l
-            xwhere REPLACE(l.path, '/article/', '') in
+            where REPLACE(l.path, '/article/', '') in
             (select slug from articles where author = """ + str(id) + ")"
         cursor.execute(query)
         count = cursor.fetchone()[0]
