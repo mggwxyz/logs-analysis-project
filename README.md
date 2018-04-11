@@ -18,36 +18,29 @@ This project is a part of Udacity's Full Stack Web Developer Nanodegree. In this
 
 > In order to run this project, you must have [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads) set up on your computer.
 
-1. Install [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads) 
-1. Clone the git repository into a directory using a bash terminal
-    ```bash
+```bash
+# Clone the git repository into a directory using a bash terminal
+    
     git clone https://github.com/mggwxyz/logs-analysis-project.git
     ````
-1. Once the project has been setup, navigate into the project directory with `Vagrantfile`
-    ```bash
-    cd logs-analysis-project
-    ```
-1. Start the virtual machine
-    ```
-    vagrant up
-    ```
-1. Connect to the virtual machine
-    ```bash
-    vagrant ssh
-    ```
-1. Navigate to the folder where the guest/host files are shared
-    ```bash
-    cd /vagrant
-    ```
-1. Unzip the news database data SQL script
-    ```
-    unzip ./data/newsdata.sql
-    ```
-1. Apply SQL to Postgres to create news database
-    ```bash
-    psql -d news -f newsdata.sql
-    ```
+# Once the project has been setup, navigate into the project directory with `Vagrantfile`
+cd logs-analysis-project
 
+# Start the virtual machine
+vagrant up
+
+# Connect to the virtual machine
+vagrant ssh
+
+# Navigate to the folder where the guest/host files are shared
+cd /vagrant
+    
+# Unzip the news database data SQL script
+unzip ./data/newsdata.sql
+    
+# Apply SQL to Postgres to create news database
+psql -d news -f newsdata.sql
+```
 ## Running the project
 
 ```bash
