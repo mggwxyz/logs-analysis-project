@@ -1,4 +1,3 @@
-
 Q: What are the most popular three articles of all time?
 
 "Candidate is jerk, alleges rival" - 342102 views
@@ -14,5 +13,3 @@ Anonymous Contributor - 170098 views
 Q: On which days did more than 1% of requests lead to errors?
 
 July 17, 2016 - 2.3% errors
-
-

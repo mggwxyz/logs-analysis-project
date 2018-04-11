@@ -10,7 +10,7 @@ cursor = connection.cursor()
 
 def print_most_popular_articles():
     # Print out the questions being answered
-    print("\nQ: What are the most popular three articles of all time?\n")
+    print("Q: What are the most popular three articles of all time?\n")
 
     # Query the database to count the number of logged views for each article
     cursor.execute("select title, slug from articles")
@@ -92,9 +92,6 @@ def print_days_with_many_errors():
 print_most_popular_articles()
 print_most_popular_authors()
 print_days_with_many_errors()
-
-# Print new line for added whitespace
-print("\n")
 
 # Close database connection
 connection.close()
