@@ -20,9 +20,8 @@ This project is a part of Udacity's Full Stack Web Developer Nanodegree. In this
 
 ```bash
 # Clone the git repository into a directory using a bash terminal
-    
-    git clone https://github.com/mggwxyz/logs-analysis-project.git
-    ````
+git clone https://github.com/mggwxyz/logs-analysis-project.git
+
 # Once the project has been setup, navigate into the project directory with `Vagrantfile`
 cd logs-analysis-project
 
