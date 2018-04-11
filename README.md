@@ -50,25 +50,17 @@ This project is a part of Udacity's Full Stack Web Developer Nanodegree. In this
 
 ## Running the project
 
-Once the project has been setup, navigate into the project directory on your home computer
-
 ```bash
+# Once the project has been setup, navigate into the project directory on your home computer
 cd logs-analysis-project
-```
 
-Then, run the following command to ssh into the vagrant box
-
-```bash
+# Then, run the following command to ssh into the vagrant box
 vagrant ssh
-```
 
-Navigate to the folder shared between the host and virtual machine
-```bash
+# Navigate to the folder shared between the host and virtual machine
 cd /vagrant
-```
 
-Run `analyze-logs.py` and log analysis will be printed
-```bash
+# Run `analyze-logs.py` and log analysis will be printed
 python3 ./scripts/analyze-logs.py
 ```
 
